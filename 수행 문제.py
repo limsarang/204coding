@@ -16,9 +16,11 @@ def solution(arr):
 
     while @@@:
         #arr[left]과 arr[right]의 값을 서로 바꿈
-        temp = arr[left]
-        arr[left] = arr[right]
-        arr[right] = temp
+        # temp = arr[left]
+        # arr[left] = arr[right]
+        # arr[right] = temp
+
+        arr[left], arr[right] = arr[right], arr[left]
 
         left += 1
         right -= 1
