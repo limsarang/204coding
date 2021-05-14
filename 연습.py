@@ -17,16 +17,7 @@ arr = [1,2, 3, 3, 1, 3, 3, 2, 3, 2]
 count = [0, 0, 0, 0]
 
 for x in arr:
-    if x == 1:
-        count[1] += 1
-    elif x == 2:
-        count[2] += 1
-    elif x == 3:
-        count[3] += 1
-
-count[1] = 일
-count[2] = 이
-count[3] = 삼
+    count[x] += 1
 
 print(f"1의 갯수 : {count[1]}")
 print(f"2의 갯수 : {count[2]}")
