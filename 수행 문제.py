@@ -53,7 +53,7 @@ print("Solution: return value of the function is", ret, ".")
 def solution(sentence):
     str = ''
     for c in sentence:
-        if c != '.' or c != ' ':
+        if c != '.' and c != ' ':
             str += c
     size = len(str)
     for i in range(size // 2):
