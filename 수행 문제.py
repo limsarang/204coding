@@ -36,7 +36,8 @@ print("Solution: return value of the function is ", ret, " .")
 def solution(scores):
    count = 0
    for s in scores:
-       if 650 <= scores[s] and scores[s] < 800:
+       # if 650 <= scores[s] and scores[s] < 800:
+       if 650 <= s < 800:       #파이썬 문법만 해당
            count += 1
    return count
 
