@@ -22,3 +22,17 @@ for x in arr:
 print(f"1의 갯수 : {count[1]}")
 print(f"2의 갯수 : {count[2]}")
 print(f"3의 갯수 : {count[3]}")
+
+#--------------------------------------
+
+sentence1 = "never odd or even."
+
+str = ''
+# for x in sentence1:
+#     print(x)
+
+for x in sentence1:
+    if x != '.' and x != ' ':
+        str += x
+
+print(str)
