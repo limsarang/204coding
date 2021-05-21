@@ -32,19 +32,17 @@ ret = solution(arr)
 print("Solution: return value of the function is ", ret, " .")
 
 #----------------------------------
-# #5
-# def solution(number):
-#    count = 0
-#    for i in range(1, number + 1):  # for(int i=1; i<number+1)
-#        current = i
-#        temp = count
-#        while current != 0:
-#            if @@@:
-#                count += 1
-#            current = current // 10
-#        if temp == count:
-#
-#    return count
+#5
+def solution(number):
+   count = 0
+   for i in range(1, number + 1):  # for(int i=1; i<number+1)
+       current = i
+       temp = count
+       while current != 0:
+           if current % 10 in [3, 6, 9]:
+               count += 1
+           current = current // 10
+   return count
 
 #----------------------------------
 #6
