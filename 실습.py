@@ -1,16 +1,14 @@
-#5
-def solution(number):
-   count = 0
-   for i in range(1, number + 1):  # for(int i=1; i<number+1)
-       current = i
-       temp = count
-       while current != 0:
-           # if a%10 == 3 or a%10 == 6 or a%10 == 9:
-           if current % 10 in [3, 6, 9]:
-               count += 1
-           current = current // 10
-   return count
+def solution(characters):
+   result = ""
+   result += characters[0]
+   for i in range(len(characters)):
+       if characters[i - 1] != characters[i]:
+           result += characters[i]
+   return result
 
-#The following is code to output testcase.
-number = 40
-ret = solution(number)
+#The following is code to output testcase. The code below is correct and you shall correct solution function.
+characters = "senteeeencccccceeee"
+ret = solution(characters)
+
+#Press Run button to receive output.
+print("Solution: return value of the function is", ret, ".")
